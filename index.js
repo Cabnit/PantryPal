@@ -1,6 +1,6 @@
  // Function to make the request and update the result div
  function makeRequest() {
-    fetch('www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast')
+    fetch('https://www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
