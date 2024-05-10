@@ -1,0 +1,18 @@
+.search-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+input{
+    font-size: 1rem;
+}
+
+.ingrediants{
+    display: grid;
+    grid-template-columns: repeat(auto-fill minmax(150px, 1fr));
+
+
+
+
+}
