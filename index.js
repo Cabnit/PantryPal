@@ -1,6 +1,6 @@
  // Function to make the request and update the result div
  function makeRequest() {
-    fetch('https://www.themealdb.com/api/json/v1/1/filter.php?i=cucumber')
+    fetch('https://www.themealdb.com/api/json/v1/1/filter.php?i=cheese')
         .then(response => {
             //the ! means that if the response is NOT true then it will throw a new error which catch will tell us
             if (!response.ok) {
@@ -8,7 +8,7 @@
                 throw new Error('No recipes found');
 
             }
-            //This says that if the response was true then it'll return show the jason file
+            //This says that if the response was true then it'll show the jason file
             return response.json();
 
         })
@@ -20,6 +20,9 @@
         .catch(error => console.error (error))
         };
 
+        function kms(){
+            console.log("Daniel is a fatass")
+        }
 
 // Call the function when the page loads
 window.addEventListener('load', makeRequest);
